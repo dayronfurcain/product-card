@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --first-color: #fefbe8;
+  --second-color: #aad7aa;
+
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: 2rem;
+}
+
+.shop__title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-color);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.card__img {
+  width: 200px;
+  height: auto;
+}
+
+.card__precis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card__preci {
+  display: block;
+  text-align: center;
+}
+
+.card__preci--before {
+  font-size: var(--smaller-font-size);
+  color: rgb(216, 120, 10);
+}
+
+.card__icon {
+  font-size: 24px;
+}
